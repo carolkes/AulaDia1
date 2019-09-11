@@ -8,36 +8,27 @@ namespace ConsoleApp1
 {
     class Program
     {
+        //Iniciando uma constante de um numero inteiro
+        const int testeConst = 999;
+
         static void Main(string[] args)
         {
-            //Texto informativo para consultar o livro pelo numero de registro do sistema
-            Console.WriteLine("Informe o livro a ser consultado: ");
-            //Parte do código que recebe as informações de registro do livro e coloca na váriavel numeroDoLivro para utlizar
-            var numeroDoLivro = Console.ReadLine();
-            //Aqui realizou a comparação das informações do livro informado com o que tenho disponível em estoque
+            string testePrimitivo = string.Empty;
+            string outroTestePrimitivo = string.Empty;
+            bool testeComp = "123" == "123";
+            Boolean testComp = "123" == "123";
 
-            if (numeroDoLivro == "123456")
-            {
-                //Informo que este livro já está locado
-                Console.WriteLine("Livro Indisponível!");
-                Console.ReadKey();
+            var testeFora = string.Empty;
+            testeFora = testeFora = "teste";
 
-                //Finaliza o método
-                return;
-            }
-            else
-            {
-                Console.WriteLine("Deseja locar o livro? (1)Sim (2)Não");
-                var resposta = Console.ReadLine();
-                if(resposta == "1")
-                {
-                    Console.WriteLine("Livro Locado.");
-                    Console.ReadKey();
-                    return;
-
-                }
-            }
-            
+            var teste1 = "String"; //Texto
+            var teste2 = 'A'; //Char
+            var teste3 = 8; // Int
+            var teste4 = 3.8; //Double
+            var teste5 = 0x0F; //Hex
+        //Apresentando a const
+            Console.WriteLine(testeConst);
+            Console.ReadKey();
         }
     }
 }
