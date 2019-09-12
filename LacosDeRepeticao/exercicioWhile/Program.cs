@@ -35,25 +35,18 @@ namespace exercicioWhile
             Console.WriteLine("Encontre no texto palavras de 3 caracteres: ");
         
             var palavra = Console.ReadLine();
-
             
             while (count < (nome.Length - 2))
-
-
             {
-
                 var palavraParaComparar = nome[count].ToString() +
                                          nome[count + 1].ToString() +
                                          nome[count + 2].ToString();
-
 
                 if (palavra == palavraParaComparar)
                   palavrasEncontradas++;
 
                 count++;
-
             }
-     
             Console.WriteLine($"Quantidade total de '{ palavra }' {palavrasEncontradas}");
 
             Console.ReadKey();
