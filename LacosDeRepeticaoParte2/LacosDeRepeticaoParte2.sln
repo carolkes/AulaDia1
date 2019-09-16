@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExercicioForeach", "Exercic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForeachMarcaDeCarros", "ForeachMarcaDeCarros\ForeachMarcaDeCarros.csproj", "{EE5DA2F8-C1D6-4E2B-A87E-B8712374A0BE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AprendendoOList", "AprendendoOList\AprendendoOList.csproj", "{343E84BD-3651-4E52-B022-EED851EDD8EF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{EE5DA2F8-C1D6-4E2B-A87E-B8712374A0BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE5DA2F8-C1D6-4E2B-A87E-B8712374A0BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE5DA2F8-C1D6-4E2B-A87E-B8712374A0BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{343E84BD-3651-4E52-B022-EED851EDD8EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{343E84BD-3651-4E52-B022-EED851EDD8EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{343E84BD-3651-4E52-B022-EED851EDD8EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{343E84BD-3651-4E52-B022-EED851EDD8EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
