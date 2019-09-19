@@ -25,7 +25,7 @@ namespace MinhaSegundaClasse
                     Quantidade = 2
                 }
             };
-            minhaCestaDeFrutas.ForEach(i => Console.WriteLine)
+            minhaCestaDeFrutas.ForEach(i => Console.WriteLine);
 
             Console.ReadKey();
 
