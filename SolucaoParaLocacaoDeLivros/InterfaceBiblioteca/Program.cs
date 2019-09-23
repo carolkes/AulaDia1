@@ -60,7 +60,7 @@ namespace InterfaceBiblioteca
                         break;
                     case 3: break;
                     case 4:
-                        while (RealizaLoginSistema())
+                        while (!RealizaLoginSistema())
                             Console.WriteLine("Login e senha inválidos");
                         break;
                     default:
