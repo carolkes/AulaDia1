@@ -9,20 +9,36 @@ namespace LocacaoBiblioteca.Controller
 {
     public class LivrosController
     {
+        private int IdContador = 1;
         public  LivrosController()
         {
-            Livros = new List<Livro>();
+            ListaDeLivros = new List<Livro>();
 
-            Livros.Add(new Livro()
+            ListaDeLivros.Add(new Livro()
             {
+                Id = IdContador++,
                 Nome = "Meu Primeiro Livro"
             });
-            Livros.Add(new Livro()
+            ListaDeLivros.Add(new Livro()
             {
+                Id = IdContador++,
                 Nome = "Meu Segundo Livro"
             });
         }
-        public List<Livro> Livros { get; set; }
-        
+        private List<Livro> ListaDeLivros { get; set; }
+        /// <summary>
+        /// Método que adiciona o livro em nossa lista já "Instanciada" criada dentro do construtor
+        /// </summary>
+        /// <param name="parametroLivro">Informações do livro que vamos adicionar</param>
+        public  void    AdicionarLivro(Livro parametroLivro)
+        {
+            parametroLivro.Id = IdContador++;
+            //Adicionamos o livro em nossa lista
+            ListaDeLivros.Add(parametroLivro);
+        }
+        public  List<Livro> RetornaListaDeLivros()
+        {
+            return ListaDeLivros;
+        }
     }
 }
