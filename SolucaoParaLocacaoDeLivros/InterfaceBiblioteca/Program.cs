@@ -41,21 +41,24 @@ namespace InterfaceBiblioteca
                 Console.WriteLine("SISTEMA DE LOCAÇÃO DE LIVRO 1.0");
 
                 Console.WriteLine("Menu Sistema");
-                Console.WriteLine("1 - Listar usuário");
+                Console.WriteLine("1 - Listar Usuários");
                 Console.WriteLine("2 - Listar Livros");
                 Console.WriteLine("3 - Cadastrar Livros");
-                Console.WriteLine("4 - Cadastro Usuários");
-                Console.WriteLine("5 - Remover Usuário");
-                Console.WriteLine("6 - Trocar de Usuário");
+                Console.WriteLine("4 - Trocar de Usuário");
+                Console.WriteLine("5 - Cadastro Usuários");
+                Console.WriteLine("6 - Remover Usuário");
+                Console.WriteLine("7 - Remover Livro");
                 Console.WriteLine("0 - Sair");
                 //Aqui vamos pegar um numero digitado
-                menuEscolhido = int.Parse(Console.ReadKey().KeyChar.ToString());
+                // menuEscolhido = int.Parse(Console.ReadKey().KeyChar.ToString());
+                int.TryParse(Console.ReadKey().KeyChar.ToString(), out menuEscolhido);
                 //Executar próxima função
                 switch (menuEscolhido)
                 {
                     case 1:
                         //Realiza a chamado do menu de listagem de usuários
                         MostrarUsuarios();
+
                         break;
                     case 2:
                         //Metodo que inicializa a tela para mostrar os livros
@@ -64,15 +67,17 @@ namespace InterfaceBiblioteca
                     //Metodo que inicializa a tela para adicionar um livro
                     case 3: AdicionarLivro();
                         break;
-                    case 4:
+                    case 4:RemoverLivroPorID();
+                        break;
+                    case 5:
                         //Metodo que inicializa a tela para adicionar um usuario
                         AdicionarUsuario();
                         break;
-                    case 5:
+                    case 6:
                         //Metodo que inicializa a tela para remover um usuario
                         RemoverUsuarioPeloID();
                         break;
-                    case 6:
+                    case 7:
                         while (!RealizaLoginSistema())
                             Console.WriteLine("Login e senha inválidos");
                         break;     
@@ -80,6 +85,18 @@ namespace InterfaceBiblioteca
                         break;
                 }
             }  
+        }
+        private static void RemoverLivroPorID()
+        {
+            Console.WriteLine("Remover livro do sistema:");
+            MostrarLivro();
+
+            Console.WriteLine("Informe o ID do livro que deseioja desativar do sistema:");
+            var livroID = int.Parse(Console.ReadLine());
+
+            livrosController.RemoverLivroPorID(livroID);
+            Console.WriteLine("Livro desativado do sistema!");
+            Console.ReadKey();
         }
         private static  void    RemoverUsuarioPeloID()
         {
