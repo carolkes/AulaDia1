@@ -3,7 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29230.47
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuRelatorio", "MenuRelatorio\MenuRelatorio.csproj", "{DE48D82D-2635-4581-96BB-C1067CC0A483}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfaceRelatorioDeVendas", "InterfaceRelatorioDeVendas\InterfaceRelatorioDeVendas.csproj", "{748610F0-A729-4781-BCC1-1BBB1C11C662}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE48D82D-2635-4581-96BB-C1067CC0A483}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE48D82D-2635-4581-96BB-C1067CC0A483}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE48D82D-2635-4581-96BB-C1067CC0A483}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE48D82D-2635-4581-96BB-C1067CC0A483}.Release|Any CPU.Build.0 = Release|Any CPU
+		{748610F0-A729-4781-BCC1-1BBB1C11C662}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{748610F0-A729-4781-BCC1-1BBB1C11C662}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{748610F0-A729-4781-BCC1-1BBB1C11C662}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{748610F0-A729-4781-BCC1-1BBB1C11C662}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
