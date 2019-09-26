@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MenuRelatorio
+namespace MenuRelatorio.Model
 {
-    public class Vendas
+    public class Carros
     {
         public int Id { get; set; }
         public string Nome { get; set; }

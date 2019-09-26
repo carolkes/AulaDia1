@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29230.47
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfaceRelatórioDeVendas", "InterfaceRelatórioDeVendas\InterfaceRelatórioDeVendas.csproj", "{272DBE37-334B-485F-9DD9-69E3984D419D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuRelatorio", "MenuRelatorio\MenuRelatorio.csproj", "{9F992FD8-9227-4A6A-9077-863E35F5D630}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{272DBE37-334B-485F-9DD9-69E3984D419D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{272DBE37-334B-485F-9DD9-69E3984D419D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{272DBE37-334B-485F-9DD9-69E3984D419D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{272DBE37-334B-485F-9DD9-69E3984D419D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F992FD8-9227-4A6A-9077-863E35F5D630}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F992FD8-9227-4A6A-9077-863E35F5D630}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F992FD8-9227-4A6A-9077-863E35F5D630}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F992FD8-9227-4A6A-9077-863E35F5D630}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {23771EBE-F47B-4482-AD5E-64A59A66BEB6}
+	EndGlobalSection
+EndGlobal

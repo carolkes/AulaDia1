@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DE48D82D-2635-4581-96BB-C1067CC0A483}</ProjectGuid>
+    <ProjectGuid>{83D5EC79-5CFB-4BC5-BEB0-CCC25EF374FE}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>MenuRelatorio</RootNamespace>
-    <AssemblyName>MenuRelatorio</AssemblyName>
+    <RootNamespace>InterfaceSistemaRelatorio</RootNamespace>
+    <AssemblyName>InterfaceSistemaRelatorio</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,15 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controller\UsuarioController.cs" />
-    <Compile Include="Model\Carros.cs" />
-    <Compile Include="Controller\CarroController.cs" />
-    <Compile Include="Model\Usuario.cs" />
-    <Compile Include="Model\VendasContext.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SistemaRelatorioCarros\SistemaRelatorioCarros.csproj">
+      <Project>{687EE158-6A47-4AF5-8CAA-E8DC5DC8B787}</Project>
+      <Name>SistemaRelatorioCarros</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

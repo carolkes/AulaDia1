@@ -1,5 +1,4 @@
-﻿using MenuRelatorio.CarroController;
-using MenuRelatorio.Controller;
+﻿using MenuRelatorio.Controller;
 using MenuRelatorio.Model;
 using System;
 using System.Collections.Generic;
@@ -7,13 +6,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InterfaceRelatorioDeVendas
+namespace InterfaceRelatórioDeVendas
 {
     class Program
     {
         static CarroController carroController = new CarroController();
         static UsuarioController usuarioController = new UsuarioController();
-
         static void Main(string[] args)
         {
             Console.WriteLine("SISTEMA DE VENDAS DE CARRO");
@@ -22,7 +20,7 @@ namespace InterfaceRelatorioDeVendas
                 Console.WriteLine("Login e Senha Inválidos");
 
             MostraMenuSistema();
- 
+
             Console.ReadKey();
         }
         private static void MostraMenuSistema()
@@ -80,5 +78,4 @@ namespace InterfaceRelatorioDeVendas
 
         }
     }
-
 }

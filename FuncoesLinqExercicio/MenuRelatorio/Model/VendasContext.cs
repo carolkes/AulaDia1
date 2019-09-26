@@ -9,7 +9,7 @@ namespace MenuRelatorio.Model
     class VendasContext
     {
         public int IdContadorDeVendas { get; set; }
-        public  List<Carros> ListaDeVendasDeCarros { get; set; }
+        public List<Carros> ListaDeVendasDeCarros { get; set; }
         public List<Usuario> ListaDeUsuarios { get; set; }
         public VendasContext()
         {
@@ -118,12 +118,9 @@ namespace MenuRelatorio.Model
 
             ListaDeUsuarios.Add(new Usuario()
             {
-             Login = "kes",
-             Senha = "madu"
+                Login = "kes",
+                Senha = "madu"
             });
         }
-      
-        
-        
     }
 }
