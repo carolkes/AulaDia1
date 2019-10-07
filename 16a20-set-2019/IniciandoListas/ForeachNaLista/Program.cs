@@ -11,7 +11,7 @@ namespace ForeachNaLista
     {
         static void Main(string[] args)
         {
-            ListaDeDecimais();
+            ListaString();
             Console.ReadKey();
         }
 
