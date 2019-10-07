@@ -55,10 +55,14 @@ namespace SistemaDeAlunos
                 Nome = nome,
                 Idade = idade
             });
-            aluno.GetAlunos().ToList<Aluno>()
-                .ForEach(x => Console.WriteLine(x.Nome + " " + x.Idade));
+
+            aluno.GetAlunos()//Aqui obtemos a lista de alunos da nossa contoller
+                .ToList<Aluno>()//Converto os alunos para uma lista
+                .ForEach(x =>//Uso o forech da lista para mostrar os alunos
+                Console.WriteLine($"Nome: {x.Nome};  Idade: {x.Idade} anos"));
         }
-       
+        //Ao executar, não esquecer de adicionar a referencia: 
+        //Tools>Nuget Package>Manage Nuget P
 
     }
 }
