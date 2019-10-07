@@ -16,7 +16,8 @@ SELECT * FROM Artistas
 SELECT * FROM Cancoes
 INSERT INTO Cancoes (ArtistaId,Nome) values (1,'Diamonds')
 INSERT INTO Cancoes (ArtistaId,Nome) values (2,'Still Into You')
-INSERT INTO Cancoes (ArtistaId,Nome) values (4,'Lady Gaga')
-INSERT INTO Cancoes (ArtistaId,Nome) values (5,'Blank Space')
-INSERT INTO Cancoes (ArtistaId,Nome) values (6,'The Killers')
-INSERT INTO Cancoes (ArtistaId,Nome) values (11,'L-O-V-E')
+INSERT INTO Cancoes (ArtistaId,Nome) values (3,'Lady Gaga')
+INSERT INTO Cancoes (ArtistaId,Nome) values (4,'Blank Space')
+INSERT INTO Cancoes (ArtistaId,Nome) values (5,'The Killers')
+INSERT INTO Cancoes (ArtistaId,Nome) values (8,'L-O-V-E')
+
