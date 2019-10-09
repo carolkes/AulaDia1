@@ -1,13 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace LocacaoBiblioteca.Model
 {
-    public class LocacaoContext
+    //através do ':' Definimos nossa herança
+    public class LocacaoContext : DbContext //herdamos toda caixa de
+        //ferramentas do entityframework
     {
+        //Definindo a tabela de Usuarios no banco de dadis
+        public DbSet<Usuario> Usuarios { get; set; }
+
+        //Definindo a tabela de livros no banco de dados
+        public DbSet<Livro> Livros { get; set; }
+
+
+        /* DESENVOLVIMENTO DE PROJETO ANTERIOR
+         * 
         //propriedade que armazena o ID dos livros adicionados ao sistema
         public int IdContadorLivros { get; set; } =1;
         public int IdContadorUsuarios { get; set; } = 1;
@@ -54,6 +66,6 @@ namespace LocacaoBiblioteca.Model
         }
 
         public List<Livro> ListaDeLivros { get; set; }
-        public List<Usuario> ListaDeUsuarios { get; set; }
+        public List<Usuario> ListaDeUsuarios { get; set; }*/
     }
 }
