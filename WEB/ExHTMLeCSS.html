@@ -3,58 +3,70 @@
     <title>Entre Aqui</title>
     <style>
         body{
-            background-image:url('http://lh4.ggpht.com/jeovanalahass/SLYVcBVZgAI/AAAAAAAACek/4jPhEb9Z23M/s800/lag6.png'); 
-            background-repeat:no-repeat;
-            background-size:cover;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
         }
-
-        #documento{
-            width:9cm;
-            height:9cm;
+        #myVideo{
+            position: fixed;
+            width: 100%;
+            height: 100%;
+        }
+      
+        .content_inputs{
+            width:400px;
+            height:300px;
+            margin:auto;
             text-align:center;
-            position:absolute;
-            margin-left:550px;
-            margin-top:150px;
+            position:relative;
             box-shadow:1px 1px 10px #50609e;
             background-color:#ffffffc2;
         }
+        input{
+            width:300px;
+        }
         #login{
-            margin-top:50px; 
+            margin-top:40px; 
         }
         #senha{
-            margin-top:25px;
+            margin-top:15px;
         }
         #botao{
             margin-top:15px;
-            border-radius:12px;
-            font-size: 14px;
+           
+            font-size: 15px;
             
         }
     </style>
 </head>
 <body>
-        <div id="documento">
-            <h2>Faça Seu Login</h2>
-            <div id="login">
-                <p>Informe seu Login:</p>
-                <input type="text"
-                       name="campotexto"
-                       id="campotexto"
-                       value="Login" />
-            </div>
-            <p>Informe sua Senha:</p>
-            <div id="senha">
-                <input type="password"
-                       name="senhasegura"
-                       id="senhasegura"
-                       value="senha" />
-            </div>
-            <div id="botao">
-                <input type="button"
-                       name="botao"
-                       id="botao"
-                       value="Logar" />
-            </div>
+    <!-- The video -->
+    <video autoplay muted loop id="myVideo">
+        <source src="video.mp4" type="video/mp4" />
+    </video>
+    <div class="content_inputs">
+        <h2>Faça Seu Login</h2>
+        <div id="login">
+            <p>Informe seu Login:</p>
+            <input type="text"
+                   name="campotexto"
+                   id="campotexto"
+                   placeholder="Login" />
         </div>
+        <p>Informe sua Senha:</p>
+        <div id="senha">
+            <input type="password"
+                   name="password"
+                   id="senhasegura"
+                   placeholder="Senha" />
+        </div>
+        <div id="botao">
+            <input type="button"
+                   name="entrar"
+                   id="botao"
+                   value="Entrar" />
+        </div>
+    </div>
 </body>
 </html>
