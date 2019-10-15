@@ -1,39 +1,145 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
     <title>Registro</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: #f1f1f1;
+        }
+
+        #formulario {
+            background: #fff;
+            width: 400px;
+            border: solid 1px #ddd;
+            height: auto;
+            border-radius: 4px;
+            box-shadow: 0px 0px 39px 6px #bdbdbd;
+        }
+
+        .field {
+            padding: 10px 20px;
+        }
+
+        .field label {
+            position: relative;
+            color: #333;
+            font-family: sans-serif;
+        }
+
+        .field input {
+            width: 100%;
+        }
+
+        .colunas {
+            display: flex;
+        }
+
+        .actions {
+            position: relative;
+            width: 100%;
+            padding: 10px 10px;
+            box-sizing: border-box;
+            display: flex;
+            border-top: solid 1px #eee;
+            justify-content: space-between;
+        }
+
+        .btn {
+            background: #e8e8e8;
+            border: none;
+            padding: 10px 20px;
+        }
+
+        .btn.success {
+            background: #859fce;
+            font-weight: 700;
+            color: #fff;
+            cursor: pointer;
+            text-shadow: 1px 1px 2px #3c3c3c;
+            transition: background 300ms ease-in-out;
+        }
+
+        .btn.success:hover {
+            background: red;
+        }
+    </style>
+
 </head>
+
 <body>
-    <div id="conteudo">
-        <div id="camponome">
-            <input type="text"
-                   name="camponome"
-                   id="camponome"
-                   value="Nome Completo" />
-        </div>
-        <div id="campoNacionalidade">
-            <input type="text"
-                   name="campoNacionalidade"
-                   id="campoNacionalidade"
-                   value="Nacionalidade" />
-        </div>
-        <div id="campoIdade">
-            <input type="number"
-                   name="campoIdade"
-                   id="campoIdade"
-                   value="Idade" />
-        </div>
-        <div id="campoCpf">
-            <input type="number"
-                   name="campoCpf"
-                   id="campoCpf"
-                   value="CPF" />
-        </div>
-        <div id="campodata">
-            <input type="datetime" 
-                   name="campodata"
-                   id="campodata"
-                   value="Data De Nascimento" />
-        </div>
+    <div id="container">
+        <form id='formulario' action="salvarDados.php" method="POST">
+            <div class='field'>
+                <label for="input-nome">Nome Completo:</label>
+                <input tabindex="0" id='input-nome' type="text" name="Nome" id="nome" placeholder="Ex. José da Silva" />
+            </div>
+            <div class='colunas'>
+                <div class='field'>
+                    <label for="input-nacionalidade">Nacionalidade:</label>
+                    <input type="text" name="Nacionalidade" id="input-nacionalidade" placeholder="Ex. Brasil" />
+                </div>
+                <div class='field'>
+                    <label for="input-idade">Idade:</label>
+                    <input type="number" name="Idade" min='0' max='100' id="input-idade" value="" placeholder="Idade" />
+                </div>
+            </div>
+            <div class='colunas'>
+                <div class='field'>
+                    <label for="input-cpf">Cpf:</label>
+                    <input type="text" maxlength="11" name="Cpf" id="input-cpf" value="" placeholder="008.456.789-23" />
+                </div>
+                <div class='field'>
+                    <label for="select-sexo">Sexo:</label>
+                    <select id='select-sexo'>
+                        <option value="M">Masculino</option>
+                        <option value="F">Feminino</option>
+                    </select>
+                </div>
+            </div>
+            <div class='field'>
+                <label for="input-nascimento">Data De Nascimento:</label>
+                <input type="date" max='2019-10-14' name="data" id="input-nascimento" placeholder="03/05/1987" />
+            </div>
+
+            <div class="actions">
+                <button id='btn-cancelar' type="button" class='btn'>Cancelar</button>
+                <button class='btn success' type="submit">Enviar</button>
+            </div>
+        </form>
     </div>
+    <script type="text/javascript">
+
+        window.addEventListener('load', () => {
+            var formulatio = document.getElementById('formulario');
+
+            var inputCpf = document.getElementById('input-cpf');
+            inputCpf.addEventListener('blur', formatarCpf);
+
+            document.getElementById('btn-cancelar').addEventListener('click', () => {
+                if (confirm('Tem certeza que quer limpar os dados?')) {
+                    formulatio.reset();
+                }
+            });
+        });
+
+        function formatarCpf(e) {
+            if (e.target.value.length < 11) {
+                alert('Campo Invalido.')
+            }
+            else {
+                document.getElementById('input-cpf').value = e.target.value.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, "$1.$2.$3-$4")
+            }
+        }
+    </script>
 </body>
+
 </html>
