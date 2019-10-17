@@ -16,10 +16,15 @@
                     <h3>Conversor De Moedas</h3>
                 </div>
                 <div class="card-body">
-                    <input type="number" class=" m-1" name="real" placeholder="Ex. 45,50" />
-                    <input type="text" name="dolar" placeholder=" Seus Reais Em Dólares" />
-                    <div class="row justify-content-start convert_money">
-                        <input type="button" class="w-25 m-1 btn btn-primary" name="convert_money" value="Converter" />
+                    <input type="text" 
+                           class=" m-1" 
+                           placeholder="Ex. 45,50" />
+
+                    <span id="money_convertido"></span>
+
+                    <div class="row justify-content-center">
+                        <input type="button" class="m-1 btn btn-primary" id="convert_money" value="Converter" />
+                        <input type="button" class="m-1 btn btn-danger" id="clear_history" value="Limpar" />
                     </div>
                 </div>
             </div>
@@ -28,7 +33,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="js/script.js" type="text/javascript"></script>
+    <script src="JavaScript/script.js" type="text/javascript"></script>
    
 </body>
 </html>
