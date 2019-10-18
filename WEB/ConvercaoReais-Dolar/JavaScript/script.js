@@ -1,8 +1,15 @@
-$('[name="convert_money"]').click(
+$(document).ready(
     function () {
-        var money = $('[name="money"]').val();
-        alert(money ? money + 'lallala' : 'Digite Um Valor!');
+        $('input[name="btnconverter"]').click(function () {
+            var valor_dolar = 4.16;
+            var valor_real = $('input[name="valor_real"]').val();
+
+            var convercao = valor_real / valor_dolar;
+
+            $('input[name="valor_dolar"]').val(convercao);
+        });
     }
 );
 
-$('#')
+
+

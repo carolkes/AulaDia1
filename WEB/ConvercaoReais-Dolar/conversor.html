@@ -17,14 +17,16 @@
                 </div>
                 <div class="card-body">
                     <input type="text" 
+                           autofocus
                            class=" m-1" 
+                           name="valor_real"
                            placeholder="Ex. 45,50" />
 
-                    <span id="money_convertido"></span>
+                    <input type="text" class="w-100 form-control form-group" name="valor_dolar" disabled/>
 
                     <div class="row justify-content-center">
-                        <input type="button" class="m-1 btn btn-primary" id="convert_money" value="Converter" />
-                        <input type="button" class="m-1 btn btn-danger" id="clear_history" value="Limpar" />
+                        <input type="button" class="m-1 btn btn-primary" name="btnconverter" value="Converter" />
+                        <input type="button" class="m-1 btn btn-danger" name="clear_history" value="Limpar" />
                     </div>
                 </div>
             </div>
