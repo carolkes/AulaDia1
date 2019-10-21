@@ -1,33 +1,33 @@
 /* Ao carregar nosso site por completo executa o conteudo do $(document).ready()*/
 var bicicleta = {
-    nome: "Madu",
-    idade: 6,
-    raca: "Border Collie",
-    cor: "preta e branca"
+    marca: "Caloi",
+    valor: 1500,
+    peso: "11.3"
+
 };
 
 $(document).ready(
     function () {
         /* Carrego defaul name */
-        $('input[name="nome"]').val(bicicleta.nome);
-        $('input[name="idade"]').val(bicicleta.idade);
-        $('input[name="raca"]').val(bicicleta.raca);
-        $('input[name="cor"]').val(bicicleta.cor);
+        $('input[name="marca"]').val(bicicleta.marca);
+        $('input[name="valor"]').val(bicicleta.valor);
+        $('input[name="peso"]').val(bicicleta.peso);
 
         $('input[name="bntsalvar"]').click(function () {
-            
+
             bicicleta = {
-                nome: $('input[name="nome"]').val(),
-                idade: $('input[name="idade"]').val(),
-                raca: $('input[name="raca"]').val(),
-                cor: $('input[name="cor"]').val()
+
+                marca: $('input[name="marca"]').val(),
+                valor: $('input[name="valor"]').val(),
+                peso: $('input[name="peso"]').val()
+
             }
 
             LimparTela();
         });
 
         $('input[name="bntmostrar"]').click(function () {
-            alert((bicicleta.nome) + " " + (bicicleta.idade) + " " + (bicicleta.raca) + " " + (bicicleta.cor));
+            alert((bicicleta.marca) + " " + (bicicleta.valor) + " " + (bicicleta.peso));
         });
 
     }

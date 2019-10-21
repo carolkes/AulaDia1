@@ -1,3 +1,5 @@
-body{
-    height: 100vh
+body {
+    height: 100vh;
+    background-image: url('https://s2.glbimg.com/UYxiq4LI1o5OZPD7seUAN-NwA7g=/0x0:1404x974/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_b58693ed41d04a39826739159bf600a0/internal_photos/bs/2018/F/T/aam3uOTEO9vKucVDKiAw/parada.jpg');
+    background-size: cover;
 }
