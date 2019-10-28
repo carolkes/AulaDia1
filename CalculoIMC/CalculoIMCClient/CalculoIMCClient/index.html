@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Cálculo IMC</title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container h-100">
+        <div class="row d-flex align-content-center justify-content-center h-100">
+            <div class="col-md-6">
+                <form id="form_principal">
+                    <div class="card-header mb-2" id="titulo" style="background-color: steelblue;">
+                        <h5>Calcule Seu IMC Aqui</h5>
+                    </div>
+                    <div class="row">
+                        <div class="input-group mb-1" style="background-color: #2c3c8724;padding: 10px;">
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                    Nome:
+                                </span>
+                                <input type="text" class="form-control" name="nomeUsuario" id="nomeUsuario" placeholder="Ex. Caroline" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-group mb-1" style="background-color: #2c3c8724;padding: 10px;">
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                    Peso:
+                                </span>
+                                <input type="text" class="form-control" name="pesoUsuario" id="pesoUsuario" placeholder="Ex. 58" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-group mb-1" style="background-color: #2c3c8724;padding: 10px;">
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                    Altura:
+                                </span>
+                                <input type="text" class="form-control" name="alturaUsuario" id="alturaUsuario" placeholder="Ex. 1,63" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input id="btncalcular" type="button" value="Calcular" />
+                        <div id="divContent">
+                            <div class="collapse" id="collapse_id">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="Scripts/jquery-3.0.0.min.js"></script>
+    <script src="Scripts/utils/script.js"></script>
+</body>
+</html>
