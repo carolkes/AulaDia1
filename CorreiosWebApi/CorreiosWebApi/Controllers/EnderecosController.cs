@@ -35,6 +35,21 @@ namespace CorreiosWebApi.Controllers
             return Ok(endereco);
         }
 
+        [HttpGet]
+        [Route("Api/Enderecos/info")]
+        public IQueryable<Endereco> EnderecosOrder()
+        {
+            return db.Enderecos.OrderBy(x => x.Cep);
+        }
+
+        [HttpGet]
+        [Route("Api/Enderecos/OrderDesc")]
+        public IQueryable<Endereco> EnderecosOrderDesc()
+        {
+            return db.Enderecos.OrderByDescending(x => x.Id);
+        }
+
+
         // PUT: api/Enderecos/5
         [ResponseType(typeof(void))]
         public IHttpActionResult PutEndereco(int id, Endereco endereco)
