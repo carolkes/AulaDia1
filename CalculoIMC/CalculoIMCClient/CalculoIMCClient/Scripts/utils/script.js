@@ -1,15 +1,5 @@
-﻿//var teste = `<p>
-//    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#collapse${id}" aria-expanded="false" aria-controls="collapseExample">
-//        Calcular IMC
-//    </button>
-//    </p>
-//    <div class="collapse" id="collapse_id${id}">
-//        <div class="card card-body">
-//            ${data}
-//        </div>
-//    </div>`
-
-$(document).ready(function () {
+﻿$(document).ready(function () {
+    
 
     $('#btncalcular').click(function () {
 
@@ -17,7 +7,19 @@ $(document).ready(function () {
         var url = `http://localhost:55426/api/CalculoIMC?${nome}`;
 
         $.get(url, function (data) {
-            alert(data);
+            var teste = `
+    <p>
+ 
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    Botão com data-target
+  $('input[name="nomeUsuario"]').val();
+</p>
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+    ${data}
+  </div>
+</div>`
+            $('#divContent').append(teste)
         });
     });
 
