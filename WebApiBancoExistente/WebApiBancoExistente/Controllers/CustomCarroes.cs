@@ -108,6 +108,6 @@ namespace WebApiBancoExistente.Controllers
                                 };
             return retornoVendas;
         }
-
+        
     }
 }
