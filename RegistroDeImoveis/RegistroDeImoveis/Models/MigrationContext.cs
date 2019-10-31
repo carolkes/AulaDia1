@@ -9,8 +9,8 @@ namespace RegistroDeImoveisMigrationApiWeb.Models
 {
     public class MigrationContext : DbContext
     {
-        public DbSet<Proprietario> Proprietarios { get; set; }
-        public DbSet<Imovel> Imoveis { get; set; }
+        public virtual DbSet<Proprietario> Proprietarios { get; set; }
+        public virtual DbSet<Imovel> Imoveis { get; set; }
     }
 
 }

@@ -176,7 +176,12 @@
     <Compile Include="Migrations\201910301949561_Seed.designer.cs">
       <DependentUpon>201910301949561_Seed.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201910311212012_CorrecaoModels.cs" />
+    <Compile Include="Migrations\201910311212012_CorrecaoModels.designer.cs">
+      <DependentUpon>201910311212012_CorrecaoModels.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\CustomValidator.cs" />
     <Compile Include="Models\Imovel.cs" />
     <Compile Include="Models\MigrationContext.cs" />
     <Compile Include="Models\Proprietario.cs" />
@@ -271,6 +276,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201910301949561_Seed.resx">
       <DependentUpon>201910301949561_Seed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910311212012_CorrecaoModels.resx">
+      <DependentUpon>201910311212012_CorrecaoModels.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

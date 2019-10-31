@@ -103,7 +103,7 @@ namespace RegistroDeImoveisMigrationApiWeb.Controllers
 
         // DELETE: api/Proprietarios/5
         [ResponseType(typeof(Proprietario))]
-        public IHttpActionResult DeleteProprietario(string id)
+        public IHttpActionResult DeleteProprietario(int id)
         {
             Proprietario proprietario = db.Proprietarios.Find(id);
             if (proprietario == null)

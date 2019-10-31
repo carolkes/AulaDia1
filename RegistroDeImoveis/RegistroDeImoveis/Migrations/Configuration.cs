@@ -17,8 +17,14 @@
         {
             context.Proprietarios.AddOrUpdate(x => x.Nome, new Models.Proprietario() {
                 Nome = "Carol",
-                DataNascimento = new DateTime(1995,11,21),
+                DataNascimento = DateTime.Parse("21/11/1995"),
                 Email = "carol@gmail.com"
+            },
+            new Models.Proprietario()
+            {
+                Nome = "Vinicius",
+                DataNascimento = DateTime.Parse("03/03/1988"),
+                Email = "vinny@gmail.com"
             });
 
             context.SaveChanges();

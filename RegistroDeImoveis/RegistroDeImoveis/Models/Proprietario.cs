@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RegistroDeImoveis.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -10,9 +11,12 @@ namespace RegistroDeImoveisMigrationApiWeb.Models
     {
         [Key]
         public int Id { get; set; }
-        public string Nome { get; set; }
-        public DateTime DataNascimento { get; set; }
-        public string Email { get; set; }
+        [CustomValidator("Nome")]
+        public string Nome { get; set; } = string.Empty;
+        [CustomValidator("DataNascimento")]
+        public DateTime DataNascimento { get; set; } = DateTime.MinValue;
+        [EmailAddress]
+        public string Email { get; set; } = string.Empty;
 
     }
 }
