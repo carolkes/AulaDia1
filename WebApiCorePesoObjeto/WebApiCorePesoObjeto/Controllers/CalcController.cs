@@ -13,20 +13,9 @@ namespace WebApiCorePesoObjeto.Controllers
     public class CalcController : ControllerBase
     {
 
-        List<Objeto> listaDeObjetos = new List<Objeto>();
-
-        [HttpGet]
-        public List<Objeto> Get(Objeto item)
-        {
-            listaDeObjetos.Add(item);
-
-            return listaDeObjetos;
-        }
-
         [HttpPost]
         public Objeto Post(Objeto values)
         {
-            listaDeObjetos.Add(values);
 
             return values;  
         }

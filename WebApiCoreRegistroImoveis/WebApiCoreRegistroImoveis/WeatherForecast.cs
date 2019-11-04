@@ -1,6 +1,6 @@
 using System;
 
-namespace WebApiCorePesoObjeto
+namespace WebApiCoreRegistroImoveis
 {
     public class WeatherForecast
     {
