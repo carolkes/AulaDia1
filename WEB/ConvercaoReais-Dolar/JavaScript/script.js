@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var endpoint =
   "https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarDia(dataCotacao=@dataCotacao)?@dataCotacao=%2710-16-2019%27&$top=100&$format=json";
 
@@ -41,3 +42,20 @@ $(document).ready(function() {
     }
   });
 });
+=======
+$(document).ready(
+    function () {
+        $('input[name="btnconverter"]').click(function () {
+            var valor_dolar = 4.16;
+            var valor_real = $('input[name="valor_real"]').val();
+
+            var convercao = valor_real / valor_dolar;
+
+            $('input[name="valor_dolar"]').val(convercao);
+        });
+    }
+);
+
+
+
+>>>>>>> 11364dcfd37844a509e11b311e263b03e964ae1a

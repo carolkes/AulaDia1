@@ -1,0 +1,10 @@
+﻿body {
+    height: 100vh;
+   
+    background-size:cover
+}
+
+#titulo {
+    text-align: center;
+    line-height: 0.5;
+}
