@@ -27,6 +27,13 @@ namespace ExercicioFinalUsuarios.Controllers
             return await _context.Usuario.ToListAsync();
         }
 
+        [HttpPost("/login")]
+        public async Task<ActionResult> AutenticarUsuario([FromBody] string login, string senha)
+        {
+
+            return Ok("TEste");
+        }
+
         // GET: api/Usuarios/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Usuario>> GetUsuario(int id)
